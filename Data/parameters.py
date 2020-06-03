@@ -29,11 +29,10 @@ class Data():
     value1 ="Ahmedabad"
 
     logout ="/html/body/app-root/app-home/mat-toolbar/button[2]/span"
-    url ="https://cqube-release.tibilprojects.com/"
-    # username = base64.b64decode("username").decode("utf-8")
-    # password = base64.b64decode("password").decode("utf-8")
-    username = "tibilsolutions@cqube.com"
-    password = "tibil123"
+    url ="url"
+    username = base64.b64decode("username").decode("utf-8")
+    password = base64.b64decode("password").decode("utf-8")
+
 
     email = "//input[@id='exampleInputEmail']"
     pwd = "//input[@id='exampleInputPassword']"
