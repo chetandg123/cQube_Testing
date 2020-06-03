@@ -11,7 +11,7 @@ from get_dir import pwd
 class Crc_Reports(unittest.TestCase):
     def setUp(self):
         path_exe = pwd()
-        self.driver = webdriver.Firefox(executable_path=path_exe.get_driver_path())
+        self.driver = webdriver.Chrome(path_exe.get_driver_path())
         driver = cqube(self.driver)
         driver.open_cqube_appln()
         driver.login_cqube()

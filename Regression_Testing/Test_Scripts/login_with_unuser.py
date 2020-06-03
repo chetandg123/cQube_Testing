@@ -19,7 +19,7 @@ class login_test(unittest.TestCase):
         self.driver.find_element_by_xpath(Data.email).send_keys("tibil@yahoo.com")
         self.driver.find_element_by_xpath(Data.pwd).send_keys("tibil")
         time.sleep(2)
-        self.driver.find_element_by_xpath(Data.submit).click()
+        self.driver.find_element_by_xpath(Data.loginbtn).click()
         time.sleep(3)
         errormsg = self.driver.find_element_by_xpath("//p").text
         print(errormsg)

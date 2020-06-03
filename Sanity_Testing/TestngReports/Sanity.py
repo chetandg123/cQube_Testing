@@ -7,7 +7,8 @@ from Sanity_Testing.Test_Scripts import Check_Cluster_records, Choose_District_c
     Cluster_wise_Details, Invalid_credentials_check, Login_and_logout, login_with_invalid_credentials, \
     login_with_invalid_password, login_to_cQube, login_with_invalid_user, login_with_unuser, login_with_wrong_user, \
     login_with_wrong_user_password, login_wrong_credentials, Schools_details, Url_test, Login_Negative_test, \
-    login_test_with_invalid_user
+    login_test_with_invalid_user, Click_on_CRC_Districts
+
 from get_dir import pwd
 
 
@@ -46,7 +47,7 @@ class MyTestSuite(unittest.TestCase):
             unittest.defaultTestLoader.loadTestsFromTestCase(login_wrong_credentials.login_test),
             unittest.defaultTestLoader.loadTestsFromTestCase(Schools_details.school_details),
             unittest.defaultTestLoader.loadTestsFromTestCase(Url_test.url_test),
-
+            unittest.defaultTestLoader.loadTestsFromTestCase(Click_on_CRC_Districts.test_crc_District),
         ])
         p = pwd()
         outfile = open(p.get_sanity_report_path(), "w")

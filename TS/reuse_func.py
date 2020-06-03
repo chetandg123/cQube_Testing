@@ -192,3 +192,10 @@ class cqube():
                 print(yaxis_lists[j].text)
                 time.sleep(4)
 
+    def CRC_dist_Clicks(self):
+        dist = self.driver.find_elements_by_xpath(Data.CRC_Districts)
+        for i in range(len(dist)):
+            dist[i].click()
+            time.sleep(3)
+            driver = cqube(self.driver)
+            driver.CRC_footers()

@@ -12,7 +12,7 @@ class Test_Distbllk(unittest.TestCase):
     def setUp(self):
 
         driver_path = pwd()
-        self.driver = webdriver.Firefox(executable_path=driver_path.get_driver_path())
+        self.driver = webdriver.Chrome(executable_path=driver_path.get_driver_path())
         driver = cqube(self.driver)
         driver.open_cqube_appln()
         driver = cqube(self.driver)

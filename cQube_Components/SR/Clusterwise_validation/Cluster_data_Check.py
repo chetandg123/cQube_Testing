@@ -12,7 +12,7 @@ from get_dir import pwd
 class district_click(unittest.TestCase):
     def setUp(self):
         dri = pwd()
-        self.driver = webdriver.Firefox(executable_path=dri.get_driver_path())
+        self.driver = webdriver.Chrome(dri.get_driver_path())
         driver = cqube(self.driver)
         driver.open_cqube_appln()
         driver.login_cqube()

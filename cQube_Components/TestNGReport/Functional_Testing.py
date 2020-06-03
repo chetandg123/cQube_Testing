@@ -119,9 +119,9 @@ class MyTestSuite(unittest.TestCase):
 
 
         ])
-        dir  =pwd()
-        outfile = open(dir.get_functional_report_path(), "a")
-
+        # dir  =pwd()
+        # outfile = open(dir.get_functional_report_path(), "a")
+        outfile = open("/home/chetan/PycharmProjects/cQube_Testing/cQube_Components/TestNGReport/Functional_Report.html","w")
         runner1 = HTMLTestRunner.HTMLTestRunner(
             stream=outfile,
             title='Test Report',

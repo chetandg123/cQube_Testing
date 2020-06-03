@@ -4,14 +4,15 @@ import unittest
 from selenium import webdriver
 
 from Data.parameters import Data
+from TS.reuse_func import cqube
 from get_dir import pwd
 
 
 class login_test(unittest.TestCase):
     def setUp(self):
-        dri = pwd()
-        self.driver = webdriver.Chrome(dri.get_driver_path())
-        self.driver.implicitly_wait(15)
+        driver_path = pwd()
+        self.driver = webdriver.Chrome(executable_path=driver_path.get_driver_path())
+
 
     def test_url(self):
         self.driver.maximize_window()
