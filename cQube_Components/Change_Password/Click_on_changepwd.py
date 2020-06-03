@@ -16,6 +16,7 @@ class Click_ChangePwd(unittest.TestCase):
         driver.open_cqube_appln()
         driver.login_cqube()
     def test_set_negative_newpwd(self):
+        time.sleep(5)
         self.driver.find_element_by_xpath(Data.Dashboard).click()
         time.sleep(3)
         self.driver.find_element_by_xpath(Data.user).click()

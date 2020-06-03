@@ -120,7 +120,7 @@ class MyTestSuite(unittest.TestCase):
 
         ])
         dir  =pwd()
-        outfile = open(dir.get_functional_report_path(), "a")
+        outfile = open(dir.get_functional_report_path(), "w")
         runner1 = HTMLTestRunner.HTMLTestRunner(
             stream=outfile,
             title='Test Report',

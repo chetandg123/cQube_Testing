@@ -3,6 +3,7 @@ import unittest
 
 from selenium import webdriver
 
+from Data.parameters import Data
 from TS.reuse_func import cqube
 from get_dir import pwd
 
