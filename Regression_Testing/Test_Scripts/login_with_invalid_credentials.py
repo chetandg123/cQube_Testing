@@ -16,10 +16,10 @@ class login_test(unittest.TestCase):
     def test_url(self):
         self.driver.maximize_window()
         self.driver.get(Data.url)
-        self.driver.find_element_by_xpath(Data.email).send_keys("tibil@gmail.com")
-        self.driver.find_element_by_xpath(Data.pwd).send_keys("1234")
+        self.driver.find_element_by_xpath(Data.email).send_keys(Data.username)
+        self.driver.find_element_by_xpath(Data.pwd).send_keys(Data.password)
         time.sleep(2)
-        self.driver.find_element_by_xpath(Data.loginbtn).click()
+        self.driver.find_element_by_xpath(Data.submit).click()
         time.sleep(3)
         errormsg = self.driver.find_element_by_xpath("//p").text
         self.assertEqual(errormsg,"User not found" , msg="Failed")

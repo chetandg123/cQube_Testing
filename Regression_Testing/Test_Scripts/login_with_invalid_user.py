@@ -19,7 +19,7 @@ class Login_test(unittest.TestCase):
         self.driver.find_element_by_xpath(Data.email).send_keys("tibil@gmail.com")
         self.driver.find_element_by_xpath(Data.pwd).send_keys("tibil123")
         time.sleep(2)
-        self.driver.find_element_by_xpath(Data.loginbtn).click()
+        self.driver.find_element_by_xpath(Data.submit).click()
         time.sleep(3)
         errormsg = self.driver.find_element_by_xpath("//p").text
         self.assertEqual(errormsg,"User not found" , msg="Failed")

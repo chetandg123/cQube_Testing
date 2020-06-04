@@ -13,16 +13,15 @@ class test_logout(unittest.TestCase):
         dri = pwd()
         self.driver = webdriver.Chrome(dri.get_driver_path())
         self.driver.implicitly_wait(15)
-
-    def test_url(self):
-        self.driver.maximize_window()
         self.driver.get(Data.url)
-        self.driver.find_element_by_xpath(Data.email).send_keys("devraj@gmail.com")
-        self.driver.find_element_by_xpath(Data.pwd).send_keys("devraj123")
-        self.driver.find_element_by_xpath(Data.submit).click()
+        self.driver.find_element_by_xpath(Data.email).send_keys(Data.username)
+        self.driver.find_element_by_xpath(Data.pwd).send_keys(Data.password)
+        self.driver.find_element_by_xpath(Data.login).click()
+    def test_url(self):
+
         time.sleep(5)
         self.driver.find_element_by_xpath(Data.logout).click()
-        time.sleep(3)
+        time.sleep(5)
         if "login" in self.driver.current_url:
             print("login page visible")
         else:

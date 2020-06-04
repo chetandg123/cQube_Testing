@@ -33,7 +33,6 @@ class Data():
     # username = base64.b64decode("username").decode("utf-8")
     # password = base64.b64decode("password").decode("utf-8")
 
-
     email = "//input[@id='exampleInputEmail']"
     pwd = "//input[@id='exampleInputPassword']"
     loginbtn = "//button[@type='submit']"
