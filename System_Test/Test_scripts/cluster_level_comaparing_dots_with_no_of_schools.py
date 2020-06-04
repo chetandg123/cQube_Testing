@@ -23,16 +23,17 @@ class Schools_validation(unittest.TestCase):
     def test_clusters(self):
         time.sleep(5)
         dist = self.driver.find_element_by_xpath(Data.SARD5).click()
-        blk = self.driver.find_element_by_xpath(Data.SARB1).click()
-        clus = self.driver.find_element_by_xpath(Data.SARC1).click()
-        time.sleep(10)
-        lists = self.driver.find_elements_by_class_name(Data.dots)
-        count = len(lists) - 1
-        self.assertNotEqual(0, count, msg="Failed")
-        no_schools = self.driver.find_element_by_xpath(Data.No_schools).text
-        str = no_schools
-        res = re.sub("\D", "", str)
-        self.assertEqual(count, int(res), msg="mis matching found!")
+
+        # blk = self.driver.find_element_by_xpath(Data.SARB1).click()
+        # clus = self.driver.find_element_by_xpath(Data.SARC1).click()
+        # time.sleep(10)
+        # lists = self.driver.find_elements_by_class_name(Data.dots)
+        # count = len(lists) - 1
+        # self.assertNotEqual(0, count, msg="Failed")
+        # no_schools = self.driver.find_element_by_xpath(Data.No_schools).text
+        # str = no_schools
+        # res = re.sub("\D", "", str)
+        # self.assertEqual(count, int(res), msg="mis matching found!")
 
     def tearDown(self):
             time.sleep(5)

@@ -21,8 +21,8 @@ class Dashobard_click(unittest.TestCase):
     def test_clusterbtn(self):
         time.sleep(6)
         self.driver.find_element_by_xpath(Data.SRD14).click()
-        time.sleep(3)
-        self.driver.find_element_by_xpath(Data.Home_icon).click()
+        # time.sleep(3)
+        # self.driver.find_element_by_xpath(Data.Home_icon).click()
 
     def tearDown(self):
         time.sleep(5)

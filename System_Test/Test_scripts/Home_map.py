@@ -24,7 +24,7 @@ class Sel_type(unittest.TestCase):
         time.sleep(5)
         self.driver.find_element_by_xpath(Data.SARD4).click()
         time.sleep(4)
-        self.driver.find_element_by_xpath(Data.Home_icon).click()
+        # self.driver.find_element_by_xpath(Data.Home_icon).click()
 
     def tearDown(self):
             time.sleep(5)

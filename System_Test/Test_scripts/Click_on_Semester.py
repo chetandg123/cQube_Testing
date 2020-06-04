@@ -11,7 +11,7 @@ from get_dir import pwd
 class test_SR(unittest.TestCase):
     def setUp(self):
         driver_path = pwd()
-        self.driver = webdriver.Chrome(driver_path.get_driver_path())
+        self.driver = webdriver.Chrome(executable_path=driver_path.get_driver_path())
         driver = cqube(self.driver)
         driver.open_cqube_appln()
         driver = cqube(self.driver)
@@ -25,13 +25,6 @@ class test_SR(unittest.TestCase):
         else:
             print("invalid")
         time.sleep(5)
-
-        self.driver.find_element_by_xpath(Data.Blocks).click()
-        time.sleep(15)
-        self.driver.find_element_by_xpath(Data.Clusters).click()
-        time.sleep(15)
-        self.driver.find_element_by_xpath(Data.Schools).click()
-        time.sleep(20)
     def tearDown(self):
         time.sleep(5)
         self.driver.close()

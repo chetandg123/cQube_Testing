@@ -24,9 +24,9 @@ class Block_validation(unittest.TestCase):
 
     def test_validate_blockrecords(self):
         time.sleep(5)
-        self.driver.find_element_by_xpath(Data.Blocks).click()
-        time.sleep(5)
-        self.driver.find_element_by_xpath(Data.Download).click()
+        # self.driver.find_element_by_xpath(Data.Blocks).click()
+        # time.sleep(5)
+        # self.driver.find_element_by_xpath(Data.Download).click()
         lists = self.driver.find_elements_by_class_name(Data.dots)
         count = len(lists)
         self.assertNotEqual(0,count,msg="Failed")

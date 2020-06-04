@@ -22,14 +22,14 @@ class test_cluster(unittest.TestCase):
         time.sleep(5)
         self.driver.find_element_by_xpath(Data.SRD3).click()
         time.sleep(2)
-        self.driver.find_element_by_xpath(Data.SRB3).click()
-        time.sleep(8)
-        amccount = self.driver.find_elements_by_class_name(Data.dots)
-        cnt = len(amccount)-1
-        time.sleep(5)
-        self.assertNotEqual(0,cnt,msg="Failed")
-        driver = cqube(self.driver)
-        driver.dots_dist()
+        # self.driver.find_element_by_xpath(Data.SRB3).click()
+        # time.sleep(8)
+        # amccount = self.driver.find_elements_by_class_name(Data.dots)
+        # cnt = len(amccount)-1
+        # time.sleep(5)
+        # self.assertNotEqual(0,cnt,msg="Failed")
+        # driver = cqube(self.driver)
+        # driver.dots_dist()
     def tearDown(self):
         time.sleep(5)
         self.driver.close()

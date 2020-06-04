@@ -20,6 +20,7 @@ class cqube():
     def login_cqube(self):
         self.driver.find_element_by_xpath(Data.email).send_keys(Data.username)
         self.driver.find_element_by_xpath(Data.pwd).send_keys(Data.password)
+        time.sleep(3)
         self.driver.find_element_by_xpath(Data.loginbtn).click()
 
     def navigate_to_student_report(self):

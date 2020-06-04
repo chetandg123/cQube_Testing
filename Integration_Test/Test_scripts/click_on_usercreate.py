@@ -17,10 +17,12 @@ class Click_create(unittest.TestCase):
         driver = cqube(self.driver)
         driver.login_cqube()
 
+
     def test_userlink(self):
+        time.sleep(5)
         self.driver.find_element_by_xpath(Data.Dashboard).click()
         time.sleep(3)
-        self.driver.find_element_by_xpath("/html/body/app-root/app-home/mat-sidenav-container/mat-sidenav/div/mat-nav-list/mat-list/mat-list-item/div/button/span/mat-icon").click()
+        self.driver.find_element_by_xpath("/html/body/app-root/app-home/mat-sidenav-container/mat-sidenav/div/mat-nav-list/mat-list/mat-list-item/div/td[2]/button/span/mat-icon").click()
         time.sleep(3)
         self.driver.find_element_by_xpath("/html/body/app-root/app-home/mat-sidenav-container/mat-sidenav/div/mat-nav-list/mat-list/div/a[1]/div/span").click()
         time.sleep(2)

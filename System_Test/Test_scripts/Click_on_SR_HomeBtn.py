@@ -24,11 +24,11 @@ class Home_click(unittest.TestCase):
         time.sleep(5)
         self.driver.find_element_by_xpath(Data.SRD12).click()
         time.sleep(5)
-        self.driver.find_element_by_xpath(Data.Download).click()
-        driver = cqube(self.driver)
-        time.sleep(5)
-        driver.Details_text()
-        driver.Click_HomeButton()
+        # self.driver.find_element_by_xpath(Data.Download).click()
+        # driver = cqube(self.driver)
+        # time.sleep(5)
+        # driver.Details_text()
+        # driver.Click_HomeButton()
     def tearDown(self):
             self.driver.close()
 

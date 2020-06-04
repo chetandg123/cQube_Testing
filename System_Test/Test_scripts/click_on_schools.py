@@ -21,9 +21,9 @@ class SAR(unittest.TestCase):
 
     def test_checking_dots_on_cluster(self):
         time.sleep(5)
-        self.driver.find_element_by_xpath(Data.Schools).click()
-
-        time.sleep(20)
+        # self.driver.find_element_by_xpath(Data.Schools).click()
+        #
+        # time.sleep(20)
         list = self.driver.find_elements_by_class_name(Data.dots)
         print(len(list))
         self.assertNotEqual(0, int(len(list) - 1), msg='Dots are not present on the map')

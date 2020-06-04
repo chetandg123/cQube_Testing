@@ -32,11 +32,14 @@ class Data():
 
     # username = base64.b64decode("username").decode("utf-8")
     # password = base64.b64decode("password").decode("utf-8")
-
+    url = "https://cqube.tibilprojects.com/"
+    username ="radhika@cqube.com"
+    password = "tibil123"
     email = "//input[@id='exampleInputEmail']"
     pwd = "//input[@id='exampleInputPassword']"
-    loginbtn = "//button[@type='submit']"
 
+    # loginbtn ="//button[@type='submit']"
+    loginbtn ="//button"
     Blocks = "//button[@class='btn btn-secondary']/b[contains(text(),'Blocks')]"
     Clusters = "//button[@class='btn btn-secondary']/b[contains(text(),'Clusters')]"
     Schools = "//button[@class='btn btn-secondary']/b[contains(text(),'Schools')]"

@@ -24,24 +24,24 @@ class SAROption(unittest.TestCase):
         time.sleep(5)
         self.driver.find_element_by_xpath(Data.SAR_Blocks_btn).click()
         time.sleep(15)
-        infob = self.driver.find_elements_by_xpath(Data.details)
-        for i in range(len(infob)):
-            time.sleep(5)
-            print(infob[i].text)
-
-        self.driver.find_element_by_xpath(Data.SAR_Clusters_btn).click()
-        time.sleep(15)
-        infoc = self.driver.find_elements_by_xpath(Data.details)
-        for i in range(len(infoc)):
-            time.sleep(5)
-            print(infoc[i].text)
-
-        self.driver.find_element_by_xpath(Data.SAR_Schools_btn).click()
-        time.sleep(30)
-        infos = self.driver.find_elements_by_xpath(Data.details)
-        time.sleep(5)
-        for i in range(len(infos)):
-           print(infos[i].text)
+        # infob = self.driver.find_elements_by_xpath(Data.details)
+        # for i in range(len(infob)):
+        #     time.sleep(5)
+        #     print(infob[i].text)
+        #
+        # self.driver.find_element_by_xpath(Data.SAR_Clusters_btn).click()
+        # time.sleep(15)
+        # infoc = self.driver.find_elements_by_xpath(Data.details)
+        # for i in range(len(infoc)):
+        #     time.sleep(5)
+        #     print(infoc[i].text)
+        #
+        # self.driver.find_element_by_xpath(Data.SAR_Schools_btn).click()
+        # time.sleep(30)
+        # infos = self.driver.find_elements_by_xpath(Data.details)
+        # time.sleep(5)
+        # for i in range(len(infos)):
+        #    print(infos[i].text)
 
     def tearDown(self):
         time.sleep(5)

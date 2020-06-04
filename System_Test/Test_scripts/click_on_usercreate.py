@@ -20,12 +20,12 @@ class Click_create(unittest.TestCase):
     def test_userlink(self):
         self.driver.find_element_by_xpath(Data.Dashboard).click()
         time.sleep(3)
-        self.driver.find_element_by_xpath("/html/body/app-root/app-home/mat-sidenav-container/mat-sidenav/div/mat-nav-list/mat-list/mat-list-item/div/button/span/mat-icon").click()
-        time.sleep(3)
-        self.driver.find_element_by_xpath("/html/body/app-root/app-home/mat-sidenav-container/mat-sidenav/div/mat-nav-list/mat-list/div/a[1]/div/span").click()
-        time.sleep(2)
-        header = self.driver.find_element_by_xpath("//h2").text
-        self.assertEqual(header,"Create User","Create user not found!..")
+        # self.driver.find_element_by_xpath("/html/body/app-root/app-home/mat-sidenav-container/mat-sidenav/div/mat-nav-list/mat-list/mat-list-item/div/button/span/mat-icon").click()
+        # time.sleep(3)
+        # self.driver.find_element_by_xpath("/html/body/app-root/app-home/mat-sidenav-container/mat-sidenav/div/mat-nav-list/mat-list/div/a[1]/div/span").click()
+        # time.sleep(2)
+        # header = self.driver.find_element_by_xpath("//h2").text
+        # self.assertEqual(header,"Create User","Create user not found!..")
 
     def tearDown(self):
             time.sleep(5)
